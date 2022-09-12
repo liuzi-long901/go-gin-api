@@ -1,0 +1,12 @@
+
+2022/09/12 22:32:41 C:/Users/Administrator/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.026ms] [rows:-] SELECT DATABASE()
+
+2022/09/12 22:32:41 C:/Users/Administrator/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[61.947ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/12 22:32:41 D:/GoProject/king-gin-api/bootstrap/db.go:107
+[63.629ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/12 22:32:41 D:/GoProject/king-gin-api/bootstrap/db.go:107
+[45.691ms] [rows:0] CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT '用户名称',`mobile` varchar(191) NOT NULL COMMENT '用户手机号',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX `idx_users_mobile` (`mobile`),INDEX `idx_users_deleted_at` (`deleted_at`))
