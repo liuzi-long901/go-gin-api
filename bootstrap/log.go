@@ -1,96 +1,69 @@
 package bootstrap
 
 import (
+	"jassue-gin/global"
+	"os"
+
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"jassue-gin/global"
-	"jassue-gin/utils"
-	"os"
-	"time"
 )
 
-var (
-	level   zapcore.Level // zap 日志等级
-	options []zap.Option  // zap 配置项
-)
+// InitZapLogger Init zap logger and set to global log
+func InitZapLogger() {
+	logLevel := global.App.Config.Log.Level
+	logFormat := global.App.Config.Log.Format
 
-func InitializeLog() *zap.Logger {
-	// 创建根目录
-	createRootDir()
-
-	// 设置日志等级
-	setLogLevel()
-
-	if global.App.Config.Log.ShowLine {
-		options = append(options, zap.AddCaller())
-	}
-
-	// 初始化 zap
-	return zap.New(getZapCore(), options...)
-}
-
-func createRootDir() {
-	if ok, _ := utils.PathExists(global.App.Config.Log.RootDir); !ok {
-		_ = os.Mkdir(global.App.Config.Log.RootDir, os.ModePerm)
-	}
-}
-
-func setLogLevel() {
-	switch global.App.Config.Log.Level {
+	// Set log level
+	zapLogLevel := zapcore.DebugLevel
+	switch logLevel {
 	case "debug":
-		level = zap.DebugLevel
-		options = append(options, zap.AddStacktrace(level))
+		zapLogLevel = zapcore.DebugLevel
 	case "info":
-		level = zap.InfoLevel
+		zapLogLevel = zapcore.InfoLevel
 	case "warn":
-		level = zap.WarnLevel
+		zapLogLevel = zapcore.WarnLevel
 	case "error":
-		level = zap.ErrorLevel
-		options = append(options, zap.AddStacktrace(level))
-	case "dpanic":
-		level = zap.DPanicLevel
-	case "panic":
-		level = zap.PanicLevel
+		zapLogLevel = zapcore.ErrorLevel
 	case "fatal":
-		level = zap.FatalLevel
+		zapLogLevel = zapcore.FatalLevel
+	case "panic":
+		zapLogLevel = zapcore.PanicLevel
 	default:
-		level = zap.InfoLevel
+		zapLogLevel = zapcore.DebugLevel
 	}
-}
 
-// 扩展 Zap
-func getZapCore() zapcore.Core {
-	var encoder zapcore.Encoder
-
-	// 调整编码器默认配置
+	// Set log format
 	encoderConfig := zap.NewProductionEncoderConfig()
-	encoderConfig.EncodeTime = func(time time.Time, encoder zapcore.PrimitiveArrayEncoder) {
-		encoder.AppendString(time.Format("[" + "2006-01-02 15:04:05.000" + "]"))
-	}
-	encoderConfig.EncodeLevel = func(l zapcore.Level, encoder zapcore.PrimitiveArrayEncoder) {
-		encoder.AppendString(global.App.Config.App.Env + "." + l.String())
-	}
+	encoderConfig.EncodeTime = zapcore.TimeEncoderOfLayout("2006/01/02 15:04:05.999")
+	encoderConfig.EncodeLevel = zapcore.CapitalLevelEncoder
 
-	// 设置编码器
-	if global.App.Config.Log.Format == "json" {
+	// Set log output
+	encoder := zapcore.NewConsoleEncoder(encoderConfig)
+	if logFormat == "json" {
 		encoder = zapcore.NewJSONEncoder(encoderConfig)
-	} else {
-		encoder = zapcore.NewConsoleEncoder(encoderConfig)
 	}
 
-	return zapcore.NewCore(encoder, getLogWriter(), level)
-}
-
-// 使用 lumberjack 作为日志写入器
-func getLogWriter() zapcore.WriteSyncer {
-	file := &lumberjack.Logger{
+	// Set log rotate
+	lumberJackLogger := &lumberjack.Logger{
 		Filename:   global.App.Config.Log.RootDir + "/" + global.App.Config.Log.Filename,
 		MaxSize:    global.App.Config.Log.MaxSize,
 		MaxBackups: global.App.Config.Log.MaxBackups,
 		MaxAge:     global.App.Config.Log.MaxAge,
 		Compress:   global.App.Config.Log.Compress,
+		LocalTime:  true,
 	}
 
-	return zapcore.AddSync(file)
+	// Init zap
+	fileSyncer := zapcore.AddSync(lumberJackLogger)
+	consoleSyncer := zapcore.AddSync(os.Stdout)
+	core := zapcore.NewCore(encoder, zapcore.NewMultiWriteSyncer(fileSyncer, consoleSyncer), zapLogLevel)
+	zapLogger := zap.New(core, zap.AddCaller())
+
+	// Zap to log
+	zap.ReplaceGlobals(zapLogger)
+	defer zapLogger.Sync()
+	ZapToLog()
+	OutConfig(zapLogger)
+	zapLogger.Info("Init zap logger success")
 }

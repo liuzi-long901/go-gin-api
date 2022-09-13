@@ -13,8 +13,7 @@ func main() {
 	r := gin.Default()
 
 	// 初始化日志
-	global.App.Log = bootstrap.InitializeLog()
-	global.App.Log.Info("log init success!")
+	bootstrap.InitZapLogger()
 
 	// 初始化数据库
 	global.App.DB = bootstrap.InitializeDB()
@@ -30,8 +29,9 @@ func main() {
 	r.GET("/ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
 	})
-
+	// 初始化验证器
+	bootstrap.InitializeValidator()
 	// 启动服务器
-	r.Run(":" + global.App.Config.App.Port)
+	bootstrap.RunServer()
 
 }

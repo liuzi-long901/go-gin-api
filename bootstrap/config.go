@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
+	"go.uber.org/zap"
 	"jassue-gin/global"
 	"os"
 )
 
 func InitializeConfig() *viper.Viper {
 	// 设置配置文件路径
-	config := "config.yaml"
+	config := "web.yaml"
 	// 生产环境可以通过设置环境变量来改变配置文件路径
 	if configEnv := os.Getenv("VIPER_CONFIG"); configEnv != "" {
 		config = configEnv
@@ -39,4 +40,13 @@ func InitializeConfig() *viper.Viper {
 	}
 
 	return v
+}
+
+func OutConfig(log *zap.Logger) {
+	// Config map into struct
+	err := viper.Unmarshal(&global.App.Config)
+	if err != nil {
+		panic("Unable to decode config into struct: ")
+	}
+	log.Info("Config into struct", zap.Any("cfg", &global.App.Config))
 }
