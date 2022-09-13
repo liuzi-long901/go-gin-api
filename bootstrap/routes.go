@@ -31,6 +31,7 @@ func RunServer() {
 		Addr:    ":" + global.App.Config.App.Port,
 		Handler: r,
 	}
+	log.Println("Run web server: listen", global.App.Config.App.Port)
 
 	go func() {
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
