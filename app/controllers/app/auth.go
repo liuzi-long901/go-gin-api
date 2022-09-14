@@ -1,6 +1,7 @@
 package app
 
 import (
+	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"jassue-gin/app/common/request"
 	"jassue-gin/app/common/response"
@@ -49,4 +50,21 @@ func Info(c *gin.Context) {
 		return
 	}
 	response.Success(c, user)
+}
+
+// Logout 用户登出
+// @Summary 用户登出
+// @Tags 用户管理
+// @Accept  json
+// @Produce  json
+// @Param Jwt-Authorization path string true "Jwt-Authorization"
+// @Success 200 {object} nil
+// @Router /api/auth/logout [post]
+func Logout(c *gin.Context) {
+	err := services.JwtService.JoinBlackList(c.Keys["token"].(*jwt.Token))
+	if err != nil {
+		response.BusinessFail(c, "登出失败")
+		return
+	}
+	response.Success(c, nil)
 }

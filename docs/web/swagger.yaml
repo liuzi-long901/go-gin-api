@@ -95,6 +95,24 @@ paths:
       summary: 用户登录
       tags:
       - 用户管理
+  /api/auth/logout:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: Jwt-Authorization
+        in: path
+        name: Jwt-Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+      summary: 用户登出
+      tags:
+      - 用户管理
   /api/auth/register:
     post:
       consumes:
