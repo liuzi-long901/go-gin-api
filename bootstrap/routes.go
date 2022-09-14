@@ -26,7 +26,7 @@ func setupRouter() *gin.Engine {
 // RunServer 启动服务器
 func RunServer() {
 	r := setupRouter()
-
+	routes.InitSwagger(r)
 	srv := &http.Server{
 		Addr:    ":" + global.App.Config.App.Port,
 		Handler: r,

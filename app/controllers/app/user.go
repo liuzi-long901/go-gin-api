@@ -14,7 +14,7 @@ import (
 // @Produce  json
 // @Param json body request.Register true "object json"
 // @Success 200 {object} models.User
-// @Router /api/user/register [post]
+// @Router /api/auth/register [post]
 func Register(c *gin.Context) {
 	var form request.Register
 	if err := c.ShouldBindJSON(&form); err != nil {

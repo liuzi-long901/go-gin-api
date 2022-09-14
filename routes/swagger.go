@@ -4,21 +4,21 @@ import (
 	"github.com/gin-gonic/gin"
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
+	_ "jassue-gin/docs/web"
 	"jassue-gin/global"
 )
 
+// InitSwagger
 // @title king-gin-api
 // @version 1.0
 // @schemes http https
 // @basePath /
 //
-// @securityDefinitions.basic  BasicAuth
-//
 // @securityDefinitions.apikey ApiJwtAuth
 // @in header
 // @name Jwt-Authorization
 // @description Jwt Header
-func initSwagger(r *gin.Engine) {
+func InitSwagger(r *gin.Engine) {
 	swaggerGroup := r.Group("/swagger")
 	if global.App.Config.Swagger.Auth {
 		swaggerGroup.Use(gin.BasicAuth(gin.Accounts{

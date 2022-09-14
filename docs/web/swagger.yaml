@@ -1,3 +1,4 @@
+basePath: /
 definitions:
   models.User:
     properties:
@@ -16,6 +17,16 @@ definitions:
       updated_at:
         type: string
     type: object
+  request.Login:
+    properties:
+      mobile:
+        type: string
+      password:
+        type: string
+    required:
+    - mobile
+    - password
+    type: object
   request.Register:
     properties:
       mobile:
@@ -29,10 +40,62 @@ definitions:
     - name
     - password
     type: object
+  services.TokenOutPut:
+    properties:
+      access_token:
+        type: string
+      expires_in:
+        type: integer
+      token_type:
+        type: string
+    type: object
 info:
   contact: {}
+  title: king-gin-api
+  version: "1.0"
 paths:
-  /api/user/register:
+  /api/auth/info:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.User'
+      summary: 用户信息
+      tags:
+      - 用户管理
+  /api/auth/login:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: object json
+        in: body
+        name: json
+        required: true
+        schema:
+          $ref: '#/definitions/request.Login'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/services.TokenOutPut'
+      summary: 用户登录
+      tags:
+      - 用户管理
+  /api/auth/register:
     post:
       consumes:
       - application/json
@@ -53,4 +116,13 @@ paths:
       summary: 用户注册
       tags:
       - 用户管理
+schemes:
+- http
+- https
+securityDefinitions:
+  ApiJwtAuth:
+    description: Jwt Header
+    in: header
+    name: Jwt-Authorization
+    type: apiKey
 swagger: "2.0"

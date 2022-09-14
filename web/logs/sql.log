@@ -679,3 +679,1425 @@
 
 2022/09/13 17:34:15 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
 [56.185ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[123.864ms] [rows:-] SELECT DATABASE()
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253 SLOW SQL >= 200ms
+[285.400ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/13 17:53:40 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[102.247ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.497ms] [rows:-] SELECT DATABASE()
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[61.297ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.748ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[64.240ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.454ms] [rows:-] SELECT DATABASE()
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.739ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/13 17:53:40 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.920ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.073ms] [rows:-] SELECT DATABASE()
+
+2022/09/13 17:53:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.712ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/13 17:53:40 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[61.747ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:13:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.028ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:13:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.574ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:13:01 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.509ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.238ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.476ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[26.850ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.378ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.240ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.385ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:13:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[53.982ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.313ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:13:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.423ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:13:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.835ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:15:06 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.005ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:15:06 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.309ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:15:06 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[62.439ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:15:06 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.359ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:15:06 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.675ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:15:06 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.433ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:15:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[57.459ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:15:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.430ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:15:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[69.340ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:15:07 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.584ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:15:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.834ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:15:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.767ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:15:07 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.677ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:16:07 C:/Users/zilong/GolandProjects/king-gin-api/app/services/user.go:30
+[128.992ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18302120798' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.683ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.263ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:17:27 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.737ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.289ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.098ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.397ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.103ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.784ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.938ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:17:27 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.110ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.797ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:17:27 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.275ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:17:27 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.458ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.125ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.552ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:21:59 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.392ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.572ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.058ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.808ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[59.187ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.206ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.380ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:21:59 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.908ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.404ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:21:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.607ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:21:59 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.553ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.754ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[62.347ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:23:37 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[62.149ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.929ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.756ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[30.488ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[61.756ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.792ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.472ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:23:37 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[60.261ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.110ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:23:37 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.183ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:23:37 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.938ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:24:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.957ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:24:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.727ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:24:30 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.596ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:24:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.948ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:24:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.243ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:24:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.416ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:24:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[59.176ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:24:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.548ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:24:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.327ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:24:31 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.960ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:24:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.007ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:24:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.137ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:24:31 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.351ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.339ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.856ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:14 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.118ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.335ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.406ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.418ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.218ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.235ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.599ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:14 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.708ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.756ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:14 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.384ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:14 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.895ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.814ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.062ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.584ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.738ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.935ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.374ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[53.740ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.439ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.927ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.870ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[26.437ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:25:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.523ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:25:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.388ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.367ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.777ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:30:40 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.591ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.892ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.851ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.963ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.441ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.012ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.316ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:30:40 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[79.485ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[49.584ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:30:40 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[80.488ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:30:40 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.578ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.399ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.906ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:42:41 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.678ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.313ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.653ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.040ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[61.015ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.085ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.511ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:42:41 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.925ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.773ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:42:41 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.722ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:42:41 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.910ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.823ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.560ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:45:18 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.524ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.895ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.042ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.495ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[54.938ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[26.504ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:45:18 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.979ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:45:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[53.971ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:45:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.466ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:45:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.375ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:45:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[53.803ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:46:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.994ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.890ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[60.231ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.430ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.218ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.282ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[61.306ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[32.215ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.531ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[60.737ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.325ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[61.688ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[70.691ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.809ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.430ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:30 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[52.284ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[26.479ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[53.668ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.177ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[53.793ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[26.563ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:30 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[53.167ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:31 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[53.428ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:46:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[26.578ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:46:31 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.520ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:46:31 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.470ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:47:04 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[37.251ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:47:04 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[61.223ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:47:04 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[60.819ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:47:04 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.339ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:47:04 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.022ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:47:04 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.595ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:47:04 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[60.236ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:47:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[34.723ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:47:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[61.305ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:47:05 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[61.662ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:47:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.624ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:47:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.719ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:47:05 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.450ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.817ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.933ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:56:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.178ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.440ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.493ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.963ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[57.850ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.978ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.892ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:56:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.510ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.350ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:56:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.225ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:56:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.799ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.298ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.391ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:57:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.871ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.433ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.904ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.434ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[56.947ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.435ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.323ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:57:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.016ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.987ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 14:57:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.522ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 14:57:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.983ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.841ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.296ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:01:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.536ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.875ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.386ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[30.651ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[57.517ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.755ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.789ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:01:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[61.407ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.940ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:01:19 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.523ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:01:19 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.206ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 15:02:00 C:/Users/zilong/GolandProjects/king-gin-api/app/services/user.go:30
+[57.582ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18302120798' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.633ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[62.967ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:04:59 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.452ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.378ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.731ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.695ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[61.614ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.461ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.629ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:04:59 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.214ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.472ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 15:04:59 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.444ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 15:04:59 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.063ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.388ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.195ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[72.880ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.826ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.217ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.859ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[57.007ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[45.989ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.228ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.125ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.542ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.832ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[74.516ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:07:42 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[31.164ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:42 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[61.092ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:42 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.184ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:07:42 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.429ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:42 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.860ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:42 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.828ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:07:42 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[61.108ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:07:42 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.715ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:43 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.425ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:43 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.965ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:07:43 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.677ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:07:43 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.014ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:07:43 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.735ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.064ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.802ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:10:05 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.318ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.375ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.884ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.760ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[55.320ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.081ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.778ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:10:05 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.609ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.749ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:10:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.073ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:10:05 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.570ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[26.195ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[51.367ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:19:01 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[49.822ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[25.300ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[50.485ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[25.213ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[49.260ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[24.008ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[50.048ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:19:01 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[50.420ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[24.391ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:19:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[49.861ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:19:01 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[49.479ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.560ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.567ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:22:07 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.354ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.139ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[54.769ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.052ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[57.872ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.404ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.087ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:22:07 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.958ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.803ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:22:07 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.336ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:22:07 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[54.506ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.212ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.340ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:23:46 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.815ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.191ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[64.245ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.849ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[59.243ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.049ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.451ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:23:46 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.854ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.215ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:23:46 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.427ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:23:47 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.614ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.742ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.621ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:24:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.296ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.032ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.357ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.391ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.957ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.128ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.300ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:24:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.926ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.537ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:24:24 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.403ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:24:24 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.333ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:24:48 C:/Users/zilong/GolandProjects/king-gin-api/app/services/user.go:30
+[58.775ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18302120798' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.370ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.440ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:25:56 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.085ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.180ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.588ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[30.136ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[59.745ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.539ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.450ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:25:56 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.588ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.176ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:25:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.181ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:25:57 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.394ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:27:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.552ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[63.044ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:01 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.222ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:27:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.739ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.608ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.396ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:27:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[61.453ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:27:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.632ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.654ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.264ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:27:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.286ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.634ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.635ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:27:09 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.426ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:09 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.707ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:09 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.889ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:27:09 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.829ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:09 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.241ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:09 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.322ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:27:10 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[59.993ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:27:10 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.983ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:10 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.315ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:10 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.075ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:27:10 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.845ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:10 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.906ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:10 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.135ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.753ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.448ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:38 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[60.272ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.245ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.715ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.038ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.630ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.030ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.489ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:38 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.782ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.346ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:27:38 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.977ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:27:39 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.369ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:28:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.421ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.291ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:01 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.043ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:28:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.530ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.315ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.495ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:28:01 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.037ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:28:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.276ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.765ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.261ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:28:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.057ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:02 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.242ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:02 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.996ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:28:50 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.375ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:50 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.370ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:50 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.737ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.699ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.093ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.046ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[60.315ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[26.922ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.889ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:51 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[56.727ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.785ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:28:51 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[55.770ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:28:51 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.160ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.644ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.598ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:29:03 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.180ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.082ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.089ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.346ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[60.751ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.278ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.436ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:29:03 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.735ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.808ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:29:03 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.169ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:29:03 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.449ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:32:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.463ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:32:56 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.639ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:32:57 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.264ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.489ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.562ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[28.823ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[58.218ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.235ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[57.033ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:32:57 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[57.110ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.663ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:32:57 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.102ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:32:57 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.169ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.595ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.609ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:34:05 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.599ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.723ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.123ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[27.573ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[56.292ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.802ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.033ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:34:05 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.239ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:34:05 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[27.594ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:34:06 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[56.172ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:34:06 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[55.080ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:35:42 C:/Users/zilong/GolandProjects/king-gin-api/app/services/user.go:31
+[55.432ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18302120798' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[30.839ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[61.505ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:36:33 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[59.279ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'ba' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[28.398ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[58.514ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:163
+[29.659ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:181
+[60.284ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'ba' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.451ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[60.212ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:36:33 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[61.175ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:250
+[29.092ms] [rows:-] SELECT DATABASE()
+
+2022/09/14 16:36:33 C:/Users/zilong/go/pkg/mod/gorm.io/driver/mysql@v1.3.6/migrator.go:253
+[59.618ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'ba%' ORDER BY SCHEMA_NAME='ba' DESC,SCHEMA_NAME limit 1
+
+2022/09/14 16:36:33 C:/Users/zilong/GolandProjects/king-gin-api/bootstrap/db.go:107
+[58.611ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'ba' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/09/14 16:36:55 C:/Users/zilong/GolandProjects/king-gin-api/app/services/user.go:31
+[58.670ms] [rows:1] SELECT * FROM `users` WHERE mobile = '18302120798' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2022/09/14 16:38:40 C:/Users/zilong/GolandProjects/king-gin-api/app/services/user.go:41
+[60.971ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
