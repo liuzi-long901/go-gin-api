@@ -1,8 +1,8 @@
 package models
 
 import (
+	"github.com/x-funs/go-fun/alias"
 	"gorm.io/gorm"
-	"time"
 )
 
 // 自增ID主键
@@ -12,8 +12,8 @@ type ID struct {
 
 // 创建、更新时间
 type Timestamps struct {
-	CreatedAt time.Time `json:"created_at"`
-	UpdatedAt time.Time `json:"updated_at"`
+	CreatedAt alias.DateTime `json:"created_at" swaggertype:"string"`
+	UpdatedAt alias.DateTime `json:"updated_at" swaggertype:"string"`
 }
 
 // 软删除
