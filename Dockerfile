@@ -13,7 +13,7 @@ ADD go.mod .
 ADD go.sum .
 RUN go mod download
 COPY . .
-RUN go build -ldflags="-s -w" -o /app/king-gin-api ./main.go
+RUN go build -ldflags="-s -w" -o /build/king-gin-api ./main.go
 
 
 FROM alpine
@@ -23,6 +23,6 @@ COPY --from=builder /usr/share/zoneinfo/Asia/Shanghai /usr/share/zoneinfo/Asia/S
 ENV TZ Asia/Shanghai
 
 WORKDIR /app
-COPY --from=builder /opt/software/king-gin-api /app/king-gin-api
+COPY --from=builder . /app/king-gin-api
 
 CMD ["./main"]
