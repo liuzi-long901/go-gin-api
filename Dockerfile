@@ -23,6 +23,6 @@ COPY --from=builder /usr/share/zoneinfo/Asia/Shanghai /usr/share/zoneinfo/Asia/S
 ENV TZ Asia/Shanghai
 
 WORKDIR /app
-COPY --from=builder /opt/software/king-gin-api /app/king-gin-api
+COPY --from=builder /app/king-gin-api /app/king-gin-api
 
 CMD ["./main"]
