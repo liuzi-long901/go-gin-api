@@ -20,8 +20,10 @@ definitions:
   request.Login:
     properties:
       mobile:
+        example: "18302120798"
         type: string
       password:
+        example: liuzilongAA666
         type: string
     required:
     - mobile

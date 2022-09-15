@@ -177,10 +177,12 @@ const docTemplate = `{
             ],
             "properties": {
                 "mobile": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "18302120798"
                 },
                 "password": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "liuzilongAA666"
                 }
             }
         },
