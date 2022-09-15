@@ -3,6 +3,7 @@ package bootstrap
 import (
 	"context"
 	"github.com/gin-gonic/gin"
+	"jassue-gin/app/controllers/app/middleware"
 	"jassue-gin/global"
 	"jassue-gin/routes"
 	"log"
@@ -25,6 +26,12 @@ func setupRouter() *gin.Engine {
 
 // RunServer 启动服务器
 func RunServer() {
+	if global.App.Config.App.Env == "production" {
+		gin.SetMode(gin.ReleaseMode)
+	}
+	router := gin.New()
+	router.Use(gin.Logger(), middleware.CustomRecovery())
+	router.Use(middleware.Cors())
 	r := setupRouter()
 	routes.InitSwagger(r)
 	srv := &http.Server{

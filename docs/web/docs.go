@@ -140,6 +140,39 @@ const docTemplate = `{
                     }
                 }
             }
+        },
+        "/api/auth/upload": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "文件上传"
+                ],
+                "summary": "文件上传",
+                "parameters": [
+                    {
+                        "description": "object json",
+                        "name": "json",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/request.ImageUpload"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/services.OutPut"
+                        }
+                    }
+                }
+            }
         }
     },
     "definitions": {
@@ -165,6 +198,17 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "updated_at": {
+                    "type": "string"
+                }
+            }
+        },
+        "request.ImageUpload": {
+            "type": "object",
+            "required": [
+                "business"
+            ],
+            "properties": {
+                "business": {
                     "type": "string"
                 }
             }
@@ -201,6 +245,20 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "services.OutPut": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "path": {
+                    "type": "string"
+                },
+                "url": {
                     "type": "string"
                 }
             }

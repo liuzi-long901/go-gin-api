@@ -17,6 +17,13 @@ definitions:
       updated_at:
         type: string
     type: object
+  request.ImageUpload:
+    properties:
+      business:
+        type: string
+    required:
+    - business
+    type: object
   request.Login:
     properties:
       mobile:
@@ -41,6 +48,15 @@ definitions:
     - mobile
     - name
     - password
+    type: object
+  services.OutPut:
+    properties:
+      id:
+        type: integer
+      path:
+        type: string
+      url:
+        type: string
     type: object
   services.TokenOutPut:
     properties:
@@ -136,6 +152,27 @@ paths:
       summary: 用户注册
       tags:
       - 用户管理
+  /api/auth/upload:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: object json
+        in: body
+        name: json
+        required: true
+        schema:
+          $ref: '#/definitions/request.ImageUpload'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/services.OutPut'
+      summary: 文件上传
+      tags:
+      - 文件上传
 schemes:
 - http
 - https

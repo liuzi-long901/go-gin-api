@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"jassue-gin/app/controllers/app"
 	"jassue-gin/app/controllers/app/middleware"
+	"jassue-gin/app/controllers/common"
 	"jassue-gin/app/services"
 )
 
@@ -15,6 +16,7 @@ func SetApiGroupRoutes(router *gin.RouterGroup) {
 	{
 		authRouter.POST("/auth/info", app.Info)
 		authRouter.POST("/auth/logout", app.Logout)
+		authRouter.POST("/auth/upload", common.ImageUpload)
 	}
 
 }

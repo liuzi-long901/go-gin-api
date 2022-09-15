@@ -33,6 +33,8 @@ func main() {
 	bootstrap.InitializeValidator()
 	// 初始化Redis
 	global.App.Redis = bootstrap.InitializeRedis()
+	//初始化文件上传服务 支持本地 阿里云 七牛云
+	bootstrap.InitializeStorage()
 	// 启动服务器
 	bootstrap.RunServer()
 
