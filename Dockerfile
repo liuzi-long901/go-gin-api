@@ -15,7 +15,7 @@ RUN go mod download
 COPY . .
 CMD cd /app/king-gin-api
 
-CMD ["./main"]
+CMD ["./main.go"]
 
 
 
