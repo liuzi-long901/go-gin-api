@@ -13,7 +13,7 @@ ADD go.mod .
 ADD go.sum .
 RUN go mod download
 COPY . .
-RUN go build -ldflags="-s -w" -o /app/king-gin-api ./main.go
+CMD cd /app/king-gin-api
 
 CMD ["./main"]
 
