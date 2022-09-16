@@ -37,12 +37,12 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm
           #指定用户/仓库名
           tags: kinganx/index:tagname
-    - name: Docker Hub Description
-      #这里是通过md文件自动生成dockerhub描述的模块，也可以不需要
-      uses: peter-evans/dockerhub-description@v3
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        repository: kinganx/autologin
+#     - name: Docker Hub Description
+#       #这里是通过md文件自动生成dockerhub描述的模块，也可以不需要
+#       uses: peter-evans/dockerhub-description@v3
+#       with:
+#         username: ${{ secrets.DOCKERHUB_USERNAME }}
+#         password: ${{ secrets.DOCKERHUB_PASSWORD }}
+#         repository: kinganx/autologin
 
 
