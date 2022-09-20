@@ -26,7 +26,7 @@ jobs:
       with:
      #这里用到了github的secrets功能，避免账户和密码随仓库泄露
        username: ${{ secrets.DOCKERHUB_USERNAME }}
-       password: ${{ secrets.DOCKERHUB_TOKEN }}
+       password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: Build and push
       #导入这个模块来完成自动编译和推送
       uses: docker/build-push-action@v3
@@ -37,7 +37,7 @@ jobs:
           platforms: linux/amd64
 #        ,linux/arm64,linux/arm
           #指定用户/仓库名
-          tags: kinganx/index:latest
+          tags: go_index/go-product:v1
 #     - name: Docker Hub Description
 #       #这里是通过md文件自动生成dockerhub描述的模块，也可以不需要
 #       uses: peter-evans/dockerhub-description@v3
