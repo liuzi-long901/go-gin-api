@@ -15,6 +15,8 @@ func main() {
 	// 初始化日志
 	bootstrap.InitZapLogger()
 
+	//初始化rabbitmq
+
 	// 初始化数据库
 	global.App.DB = bootstrap.InitializeDB()
 	// 程序关闭前，释放数据库连接

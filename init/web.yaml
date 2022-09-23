@@ -69,3 +69,10 @@ storage:
       secret_key:
       is_ssl: true
       is_private: false
+
+rabbitmq:
+  host: 120.48.108.48
+  port: 5672
+  username: guest
+  password: guest
+  virtualhost: guest
