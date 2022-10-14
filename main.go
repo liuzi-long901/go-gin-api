@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"jassue-gin/bootstrap"
 	"jassue-gin/global"
+	"jassue-gin/setup"
 	"net/http"
 )
 
@@ -15,8 +16,8 @@ func main() {
 	// 初始化日志
 	bootstrap.InitZapLogger()
 
-	//初始化rabbitmq
-
+	////测试send
+	//bootstrap.Product()
 	// 初始化数据库
 	global.App.DB = bootstrap.InitializeDB()
 	// 程序关闭前，释放数据库连接
@@ -35,8 +36,13 @@ func main() {
 	bootstrap.InitializeValidator()
 	// 初始化Redis
 	global.App.Redis = bootstrap.InitializeRedis()
+	//初始化mq
+
 	//初始化文件上传服务 支持本地 阿里云 七牛云
 	bootstrap.InitializeStorage()
+
+	//初始化mq
+	setup.Rabbit()
 	// 启动服务器
 	bootstrap.RunServer()
 
