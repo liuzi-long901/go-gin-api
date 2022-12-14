@@ -1,6 +1,6 @@
 app: # 应用基本配置
   env: dev # 环境名称
-  port: 8080 # 服务监听端口号
+  port: 8081 # 服务监听端口号
   app_name: gin-server # 应用名称
   app_url: http://localhost # 应用域名
 
@@ -47,7 +47,7 @@ redis:
   host: 120.48.108.48
   port: 6379
   db: 5
-  password: pscale_pw_ZdW4ouSYTA5FNrw9IEJogUCVwnhPNCEJIZA8h3_-fmg
+  password: f1558f62-6af9-11ed-a1eb-0242ac120002
 
 storage:
   default: local # 默认驱动

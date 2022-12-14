@@ -1,52 +1,7 @@
 package main
 
-import (
-	"github.com/gin-gonic/gin"
-	"jassue-gin/bootstrap"
-	"jassue-gin/global"
-	"jassue-gin/receiver"
-	"jassue-gin/setup"
-	"net/http"
-)
+import web "jassue-gin/cmd"
 
 func main() {
-
-	// 初始化配置
-	bootstrap.InitializeConfig()
-	r := gin.Default()
-
-	// 初始化日志
-	bootstrap.InitZapLogger()
-
-	////测试send
-	//bootstrap.Product()
-	// 初始化数据库
-	global.App.DB = bootstrap.InitializeDB()
-	// 程序关闭前，释放数据库连接
-	defer func() {
-		if global.App.DB != nil {
-			db, _ := global.App.DB.DB()
-			db.Close()
-		}
-	}()
-
-	// 测试路由
-	r.GET("/ping", func(c *gin.Context) {
-		c.String(http.StatusOK, "pong")
-	})
-	// 初始化验证器
-	bootstrap.InitializeValidator()
-	// 初始化Redis
-	global.App.Redis = bootstrap.InitializeRedis()
-	//初始化mq
-
-	//初始化文件上传服务 支持本地 阿里云 七牛云
-	bootstrap.InitializeStorage()
-
-	//初始化mq
-	setup.Rabbit()
-	receiver.RabbitSimple()
-	// 启动服务器
-	bootstrap.RunServer()
-
+	web.Execute()
 }

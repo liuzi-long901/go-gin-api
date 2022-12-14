@@ -13,8 +13,8 @@ require (
 	github.com/jassue/go-storage v1.0.1
 	github.com/rabbitmq/amqp091-go v1.5.0
 	github.com/satori/go.uuid v1.2.0
+	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.13.0
-	github.com/streadway/amqp v1.0.0
 	github.com/swaggo/files v0.0.0-20220728132757-551d4a08d97a
 	github.com/swaggo/gin-swagger v1.5.3
 	github.com/swaggo/swag v1.8.5
@@ -58,6 +58,7 @@ require (
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/gsterjov/go-libsecret v0.0.0-20161001094733-a6f4afe4910c // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
