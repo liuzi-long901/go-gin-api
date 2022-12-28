@@ -1,11 +1,6 @@
 package bootstrap
 
 import (
-	"go.uber.org/zap"
-	"gopkg.in/natefinch/lumberjack.v2"
-	"gorm.io/driver/mysql"
-	"gorm.io/gorm"
-	"gorm.io/gorm/logger"
 	"io"
 	"jassue-gin/app/models"
 	"jassue-gin/global"
@@ -13,6 +8,12 @@ import (
 	"os"
 	"strconv"
 	"time"
+
+	"go.uber.org/zap"
+	"gopkg.in/natefinch/lumberjack.v2"
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
+	"gorm.io/gorm/logger"
 )
 
 func InitializeDB() *gorm.DB {
@@ -107,6 +108,7 @@ func initMySqlTables(db *gorm.DB) {
 	err := db.AutoMigrate(
 		models.User{},
 		models.Media{},
+		//models.Data{},
 	)
 	if err != nil {
 		global.App.Log.Error("migrate table failed", zap.Any("err", err))

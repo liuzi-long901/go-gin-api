@@ -173,6 +173,20 @@ paths:
       summary: 文件上传
       tags:
       - 文件上传
+  /api/message/jijin:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: 消息通知
+      tags:
+      - 消息管理
 schemes:
 - http
 - https
